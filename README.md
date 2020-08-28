@@ -6,19 +6,19 @@ As recommended, we implemented the image captioning system following an encoder-
 
 Because we had access to a SLURM-running GPU cluster we decided to implement our system using *Pytorch Lightning*'s framework, and ran small grid-search parameter optimization using *Test-tube*. 
 
-Installing these libraries is _not_ necessary to run or see our evaluation files, but they are necessary to reproduce our results.
+Installing these libraries is NOT necessary to run or see our evaluation files, but they are necessary to reproduce our results.
 
-To install Pytorch Lightning check out they official GitHub repo [here](https://github.com/PyTorchLightning/pytorch-lightning), and the same goes for Test-tube [here](https://pypi.org/project/test-tube/).
+To install Pytorch Lightning check out they official GitHub repo [here](https://github.com/PyTorchLightning/pytorch-lightning), and Test-tube's pip installation command [here](https://pypi.org/project/test-tube/).
 
 ## Important files
 
-All evaluation notebooks are available in this repo under *evaluation-experiment_name>*.ipynb
+All evaluation notebooks are available in this repo under *evaluation-experiment_name*.ipynb
 
-If you want to check how our training script looked before transforming it into a Pytorch Lightning module, check *non_pl_train.py*
+If you want to see how our training script looked before transforming it into a Pytorch Lightning module, check *non_pl_train.py*
 
 The final version of our model can be found in *pl_model.py*
 
-If you want to reproduce our results, you can download our experiment's checkpoints from [here](https://drive.google.com/drive/folders/1mB9OuKhlkDSrenjq5uRoKf-BqX9lyeqQ?usp=sharing)
+If you want to reproduce our results, you can download our experiment's checkpoints from [here](https://drive.google.com/drive/folders/1mB9OuKhlkDSrenjq5uRoKf-BqX9lyeqQ?usp=sharing).
 Once you download these checkpoints, place the lightning_logs folder on your local copy of this repo's master folder. All of our cluster-related outputs can be found in *slurm_files/*
 
 Our main training script can be found as *pl_train_grid.py*
