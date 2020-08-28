@@ -12,3 +12,4 @@ pl_version_cluster
 test_captions.ipynb
 __pycache__
 *.ckpt
+.DS_Store
