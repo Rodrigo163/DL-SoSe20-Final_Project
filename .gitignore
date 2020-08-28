@@ -1,0 +1,14 @@
+*.jpg
+*.txt
+*.tar
+*.csv
+images_inference.pkl
+images
+.ipynb_checkpoints
+non_pl_version
+pl_inception
+pl_version
+pl_version_cluster
+test_captions.ipynb
+__pycache__
+*.ckpt
